@@ -69,21 +69,21 @@
     box-sizing: border-box;
     padding: 0.2em;
     display: grid;
-    border-radius: 1.4em;
+    border-radius: 1.1em;
     width: 40%;
     height: auto;
-    grid-template-columns: 90%;
+    grid-template-columns: 95%;
     grid-template-rows: auto;
     justify-content: space-around;
     position: absolute;
     background-color: white;
     top: 25%;
     left: 2%;
-    border: 1px solid #dededeff;
+    border: none;
 }
 .sub_body .img_and_text .sub_img{
     height: 14vw;
-    width: 100%;
+    width: 90%;
     border-radius: 1.1em;
     justify-self: center;
     margin-top: 1vh;
@@ -96,6 +96,7 @@
     row-gap: 1vh;
     padding-bottom: 1em;
     padding-top: 1em;
+    justify-content: center;
 }
 .sub_body .img_and_text .sub_sub_text h2 {
     font-size: 1.3em;

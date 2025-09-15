@@ -32,11 +32,11 @@
 }
 .abt_big_pics div span{
     border-radius: 0.7em;
-    border: 2px solid #102e49ff;
+    border: 1px solid #102e49ff;
     color: #102e49ff;
     padding: 0.3em 1.5em 0.3em 1.5em;
     font-size: 0.8em;
-    font-weight: bold;
+    font-weight: normal;
 }
 .abt_text {
     display: grid;

@@ -88,7 +88,7 @@ export default function Navigation (props) {
                     <ul ref={mobileList} className={styles.mobileNavList}>
                         {
                             textAndOnclick.map((arr, indx) => (
-                                <li onClick={(e)=>{handleBurger(e);arr[1]()}} key={`${arr[0]}${indx}`}>{arr[0]}</li>
+                                <li onClick={arr[1]} key={`${arr[0]}${indx}`}>{arr[0]}</li>
                             ))   
                         }
                     </ul> : <></>}
