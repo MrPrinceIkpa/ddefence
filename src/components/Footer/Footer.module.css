@@ -1,0 +1,88 @@
+.con {
+    width: 95%;
+    margin: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: grid;
+    grid-template-columns: 40% 20% 20%;
+    justify-content: space-between;
+}
+.foot_sec_1 {
+    display: grid;
+    row-gap: 5vh;
+}
+.foot_sec_1 fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 4vh;
+    justify-items: start;
+}
+.subscribe_wrapper {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "logo logo"
+        "email btn"
+    ;
+    border: 1px solid #e2e2e2ff;
+    border-radius: 0.6em;
+}
+.foot_sec_1 fieldset h4 {
+    font-weight: normal;
+    grid-area: logo;
+}
+.foot_sec_1 input, .foot_sec_1 input:focus{
+    width: 100%;
+    padding: 1em;
+    grid-area: email;
+    border-radius: 2em;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.foot_sec_1 button{
+    width: 60%;
+    padding: 1em;
+    grid-area: btn;
+    justify-self: end;
+    border-radius: 0;
+    border-bottom-right-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    background-color: #102e49ff;
+    color: white;
+
+
+}
+.foot_sec_2 {
+    display: grid;
+}
+.foot_sec_2 h5 {
+    font-weight: 100;
+    color: #ecececff;
+    color: black;
+    align-self: end;
+}
+@media screen and (max-width: 758px) {
+    .con {
+        grid-template-columns: 70% 10% 10%;
+    }
+}
+@media screen and (max-width: 510px) {
+    .con {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "main"
+        ;
+    }
+    .foot_sec_1 {
+        grid-area: main;
+        grid-template-columns: 100%;
+    }
+    .subscribe_wrapper {
+        width: 90%;
+        justify-content: center;
+    }
+
+}

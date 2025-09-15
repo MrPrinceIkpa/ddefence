@@ -1,0 +1,111 @@
+.contact_con {
+    display: grid;
+    width: 95vw;
+    margin: auto;
+    row-gap: 4vh;
+    position: relative;
+}
+.cont_head h2{
+    font-size: 1.6em;
+}
+.cont_body {
+    width: 50%;
+    justify-self: center;
+}
+.cont_body form fieldset {
+    display: grid;
+    row-gap: 2vh;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-areas: 
+        "name name email"
+        "phone service service"
+        "message message message"
+        "submit submit submit"
+    ;
+    justify-content: space-between;
+    border-radius: 1.3em;
+    padding: 2em;
+    box-shadow: none;
+    border: none;
+    box-shadow: 3px 3px 7px #d9d9dc5e;
+    outline: none;
+}
+.cont_body form fieldset input, .cont_body form fieldset input:focus {
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.8em;
+    border: 1px solid #efeff0ff;
+    outline: none;
+}
+.cont_body form fieldset select, .cont_body form fieldset select:focus{
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.8em;
+    outline: none;
+    border: 1px solid #efeff0ff;
+    outline: none;
+}
+.cont_body form fieldset textarea {
+    width: 100%;
+    height: 10vw;
+    padding: 1em;
+    border-radius: 0.8em;
+    border: 1px solid #efeff0ff;
+    outline: none;
+}
+.form_name {
+    grid-area: name;
+}
+.form_email {
+    grid-area: email;
+}
+.form_phone {
+    grid-area: phone;
+}
+.form_phone input::-webkit-outer-spin-button, .form_phone input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form_phone input[type=number] {
+  -moz-appearance: textfield;
+}
+.form_service {
+    grid-area: service;
+}
+.form_message {
+    grid-area: message;
+}
+.form_submit {
+    grid-area: submit;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+}
+.form_submit button {
+    width: 30%;
+    justify-self: center;
+    border-radius: 0.8em;
+}
+.form_message textarea{
+    resize: none;
+}
+@media screen and (max-width: 775px) {
+    .cont_body {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 515px) {
+    .cont_body {
+        width: 80%;
+    }
+    .form_submit button {
+        width: 45%;
+        justify-self: center;
+        border-radius: 0.8em;
+    }
+}
+@media screen and (max-width: 425px) {
+    .cont_body {
+        width: 95%;
+    }
+}

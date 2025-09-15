@@ -1,0 +1,113 @@
+.con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    margin: auto;
+    padding: 0.3em 0.9em 0.3em 0.9em;
+    border-radius: 1.9em;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    box-shadow: 1px 1px 7px #ecececff;
+}
+.logo_con {
+    align-self: center;
+}
+.logo_con .logo {
+    width: 10%;
+    height: auto;
+}
+.others_con ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 40vw;
+    column-gap: 2.4em;
+    padding: 0.8em;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.others_con ul li {
+    cursor: pointer;
+    color: #171f26ff;
+}
+.others_con ul li:hover {
+    color: #efeff0ff;
+}
+.mobileNavList {
+    display: none;
+}
+
+@media screen and (max-width: 854px) {
+    .others_con ul {
+        width: 70vw;
+    }
+    .mobileNavList {
+        display: none;
+    }
+}
+@media screen and (max-width: 570px) {
+    .con {
+        padding: 0.6em 1.1em 0.6em 1.1em;
+        width: 97%;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas: 
+            "logo . burger"
+            "list list list"
+        ;
+        row-gap: 0;
+    }
+    .logo_con {
+        grid-area: logo;
+    }
+    .others_con {
+        grid-area: burger;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+    }
+    .others_con ul {
+        width: 60vw;
+        display: none;
+    }
+    .hamburger {
+        width: 8vw;
+        height: 6vw;
+        display: grid;
+        align-items: space-evenly;
+        position: relative;
+    }
+    .line {
+        width: 100%;
+        height: 3px;
+        background-color: #171f26ff;
+        border-radius: 2em;
+    }
+    .mobileNavList {
+        padding-bottom: 10vh;
+        padding-top: 5vh;
+        width: 100%;
+        justify-self: center;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        row-gap: 2.3em;
+        font-size: 0.8em;
+        position: relative;
+        z-index: 100;
+        background-color: white;
+        border-bottom-left-radius: 1.2em;
+        border-bottom-right-radius: 1.2em;
+        grid-area: list;
+        margin-top: 15px;
+        font-weight: bold;
+        color: #171f26ff;
+    }
+    .logo_con .logo {
+        width: 90%;
+        height: auto;
+    }
+}

@@ -1,0 +1,133 @@
+.test_con {
+    display: grid;
+    width: 95vw;
+    margin: auto;
+    row-gap: 5vh;
+    background-color: #f6f6f6ff;
+    border-radius: 1em;
+    padding: 1.5em;
+    padding-top: 2.5em;
+    padding-bottom: 2.9em;
+}
+.test_body {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: space-between;
+}
+.test_side_h {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.test_side_h h2 {
+    font-size: 3.4em;
+    width: 70%;
+    text-align: right;
+}
+.test_card {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 45% 50%;
+    justify-content: space-between;
+    border-radius: 1em;
+    background-color: white;
+}
+.test_pic {
+    width: 100%;
+    min-height: 70vh;
+    background-image: url('../../../public/ceo.jpg');
+    position: relative;
+    border-radius: 1em;
+    background-position: center;
+    background-size: cover;
+}
+.test_pic div {
+    position: absolute;
+    bottom: 5vh;
+    width: 60%;
+    left: 2vw;
+    background-color: #4e4e4e36;
+    border-radius: 0.4em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+.test_pic div h3 {
+    margin-bottom: 1vh;
+    font-size: 1.2em;
+    color: #102e49ff;
+    font-weight: bold;
+}
+.test_pic div h5 {
+    font-weight: bold;
+    font-size: 1em;
+    color: #efeff0ff;
+}
+.test_text {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    display: grid;
+    row-gap: 10vh;
+    justify-content: center;
+    align-content: start;
+}
+.test_text img {
+    width: 20%;
+    height: auto;
+}
+.test_text p {
+    font-size: 1.4em;
+    line-height: 1.8em;
+}
+@media screen and (max-width: 862px) {
+    .test_body {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "text"
+            "card"
+        ;
+        row-gap: 9vh;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    .test_card {
+        justify-self: center;
+        grid-area: card;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "pic"
+            "quote"
+        ;
+        justify-content: center;
+        margin: auto;
+    }
+    .test_side_h {
+        grid-area: text;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .test_side_h h2 {
+        text-align: right;
+        width: 80%;
+        justify-self: end;
+    }
+    .test_pic {
+        grid-area: pic;
+        width: 100%;
+        min-height: 45vh;
+    }
+    .test_text {
+        grid-area: quote;
+        width: 90%;
+        justify-self: center;
+    }
+    .test_text p {
+        width: 80%;
+        justify-self: center;
+        margin: auto;
+    } 
+}

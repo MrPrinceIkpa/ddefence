@@ -1,0 +1,12 @@
+.con {
+    width: 30%;
+    background-color: #ffed2fff;
+    color: #171f26ff;
+    font-size: 1em;
+    padding: 1.2em 1.2em 1.2em 1.2em;
+    border-radius: 1.1em;
+    border: none;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-weight: bold;
+}

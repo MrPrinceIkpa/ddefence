@@ -1,0 +1,114 @@
+.abt_con {
+    width: 95vw;
+    margin: auto;
+    display: grid;
+    row-gap: 5vh;
+}
+.abt_head h2 {
+    font-size: 1.4em;
+}
+.abt_body {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    justify-content: space-between;
+}
+.abt_big_pics {
+    width: 40vw;
+    min-height: 100vh;
+    background-image: url('../../../public/info.jpg');
+    position: relative;
+    border-radius: 1em;
+    background-position: left;
+    background-size: cover;
+}
+.abt_big_pics div {
+    position: absolute;
+    top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    left: 2vw;
+}
+.abt_big_pics div span{
+    border-radius: 0.7em;
+    border: 2px solid #102e49ff;
+    color: #102e49ff;
+    padding: 0.3em 1.5em 0.3em 1.5em;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.abt_text {
+    display: grid;
+    align-items: start;
+    justify-content: start;
+    row-gap: 0;
+    align-content: stretch;
+}
+.abt_text h2 {
+    margin-bottom: 0vh;
+    text-align: center;
+    font-size: 2.5em;
+    align-self: end;
+}
+.abt_text p {
+    text-align: center;
+    width: 60%;
+    justify-self: center;
+    font-size: 0.9em;
+    align-self: start;
+    margin-top: 9vh;
+    line-height: 1.6em;
+}
+@media screen and (max-width: 1213px) {
+    .abt_big_pics div {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 899px) {
+    .abt_big_pics div {
+        width: 90%;
+    }
+    .abt_big_pics {
+        min-height: 60vh;
+    }
+}
+@media screen and (max-width: 761px) {
+    .abt_body {
+        grid-template-columns: 80%;
+        grid-template-areas: 
+            "img"
+            "text"
+        ;
+        justify-items: center;
+        justify-content: center;
+        row-gap: 9vh;
+    }
+    .abt_big_pics div {
+        width: 60%;
+    }
+    .abt_big_pics {
+        width: 90vw;
+        grid-area: img;
+        justify-self: center;
+    }
+    .abt_text {
+        width: 90vw;
+        grid-area: text;
+        justify-self: center;
+    }
+    .abt_text p {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 540px) {
+    .abt_big_pics div {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 339px) {
+    .abt_big_pics div span {
+        font-size: 0.6em;
+    }
+}
+

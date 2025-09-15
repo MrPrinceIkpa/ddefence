@@ -1,0 +1,110 @@
+.serv_con {
+    display: grid;
+    width: 95vw;
+    margin: auto;
+    row-gap: 10vh;
+    background-color: #f6f6f6ff;
+    border-radius: 1em;
+    padding: 1.5em;
+    position: relative;
+}
+.serv_head {
+    display: grid;
+    justify-content: center;
+    row-gap: 5vh;
+    width: 100%;
+}
+.serv_head .main_head {
+    display: block;
+    width: 100%;
+    justify-self: start;
+}
+.serv_body {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: start;
+}
+.top_card_con {
+    padding: 2em;
+    background-color: white;
+    border-radius: 0.8em;
+    width: 70%;
+    justify-self: center;
+    display: grid;
+    row-gap: 9vh;
+    position: relative;
+}
+.top_card_con h2 {
+    font-size: 4em;
+    width: 60%;
+    color: #102e49ff;
+}
+.top_card_con div{
+ background-image: url('../../../public/focus.jpg');
+ height: 10vw;
+ width: 10vw;
+ background-size: cover;
+ background-position: center;
+ border-radius: 1.0em;
+ justify-self: end;
+}
+.service_card {
+    display: grid;
+}
+.service_card {
+    width: 80%;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: white;
+    display: grid;
+    row-gap: 7vh;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+.service_card_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service_card_head img{
+    width: 14%;
+    height: auto;
+}
+.service_card p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin-bottom: 9vh;
+}
+@media screen and (max-width: 1028px) {
+    .service_card p {
+        margin-bottom: 3vh;
+    }
+    .service_card {
+        margin-bottom: 2em;
+    }
+    .serv_body {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+@media screen and (max-width: 799px) {
+    .serv_body {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+    .top_card_con {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 573px) {
+    .serv_body {
+        grid-template-columns: 90%;
+        grid-template-rows: auto;
+        justify-items: center;
+        justify-content: center;
+    }
+    .top_card_con {
+        width: 100%;
+        justify-self: start;
+    }
+}
